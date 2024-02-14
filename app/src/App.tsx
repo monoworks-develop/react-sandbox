@@ -1,12 +1,14 @@
+import { useState } from "react";
 import "./App.css";
-import { InputWithLabel } from "./InputWithLabel";
 
 function App() {
+  const [count, setCount] = useState(0);
+  const onClick = () => setCount(count + 1);
+
   return (
     <div>
-      <InputWithLabel label="Id" />
-      <InputWithLabel label="Pass" />
-      <button>任意のテキスト</button>
+      <p>{count}</p>
+      <button onClick={onClick}>+</button>
     </div>
   );
 }
