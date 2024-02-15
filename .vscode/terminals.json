@@ -6,14 +6,7 @@
       "description": "vite 開発",
       "focus": false,
       "execute": true,
-      "commands": ["cd vite-app", "npm run dev"]
-    },
-    {
-      "name": "next dev",
-      "description": "next 開発",
-      "focus": false,
-      "execute": true,
-      "commands": ["cd next-app", "npm run dev"]
+      "commands": ["cd app", "npm run dev"]
     }
   ]
 }
