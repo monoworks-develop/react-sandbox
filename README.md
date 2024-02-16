@@ -1,2 +1,3 @@
 # react-sandbox
-React.jsのテスト用環境
+
+React.js のテスト用環境
