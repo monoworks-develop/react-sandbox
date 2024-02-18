@@ -1,9 +1,11 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import Link from 'next/link';
 
-import 'modern-css-reset/dist/reset.css';
-import './layout.css';
+import { styles } from './layout.css';
+
+import { Header } from '@/components/UI/Header';
+
+import 'ress';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -18,14 +20,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='ja'>
+    <html lang='ja' className={styles.root}>
       <body className={inter.className}>
-        <header>
-          <div>
-            <Link href={'./ContextAPI'}>ContextAPI</Link>
-          </div>
-        </header>
-        {children}
+        <Header />
+        <main className={styles.main}>{children}</main>
       </body>
     </html>
   );

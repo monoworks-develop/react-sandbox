@@ -1,8 +1,8 @@
 import { style } from '@vanilla-extract/css';
 
 export const styles = {
-  header: style({
-    height: '3rem',
-    backgroundColor: 'lightblue',
+  title: style({
+    lineHeight: '2.5',
+    textAlign: 'center',
   }),
 };

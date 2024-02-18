@@ -1,5 +1,8 @@
-import styles from './page.module.css';
-
 export default function Home() {
-  return <div className=''>aa</div>;
+  return (
+    <div>
+      <h1>Home</h1>
+      <p>Welcome to the State Management App</p>
+    </div>
+  );
 }
