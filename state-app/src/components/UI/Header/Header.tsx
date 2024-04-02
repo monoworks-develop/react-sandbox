@@ -1,11 +1,11 @@
 import { styles } from './Header.css';
 
-import { Link } from '@/components';
+import { NavLink } from '@/components/Elements';
 
 export function Header() {
   const links = [
     { href: '/0_useState', children: 'useState' },
-    { href: '/1_useContext', children: 'useContext' },
+    { href: '/1_ContextAPI', children: 'Context API' },
     { href: '/2_Redux', children: 'Redux' },
     { href: '/3_Zustand', children: 'Zustand' },
     { href: '/4_Mobx', children: 'Mobx' },
@@ -20,7 +20,7 @@ export function Header() {
         <ul className={styles.linkListContainer}>
           {links.map(({ href, children }) => (
             <li key={href} className={styles.linkWrapper}>
-              <Link href={href}>{children}</Link>
+              <NavLink href={href}>{children}</NavLink>
             </li>
           ))}
         </ul>

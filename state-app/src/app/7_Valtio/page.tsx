@@ -1,10 +1,10 @@
-import { Title } from '@/components';
+import { Title } from '@/components/Elements';
 
 export default function Valtio() {
   return (
-    <div>
+    <>
       <Title>Valtio</Title>
       <span>aa</span>
-    </div>
+    </>
   );
 }

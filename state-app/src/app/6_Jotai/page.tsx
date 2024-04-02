@@ -1,10 +1,10 @@
-import { Title } from '@/components';
+import { Title } from '@/components/Elements';
 
 export default function Jotai() {
   return (
-    <div>
+    <>
       <Title>Jotai</Title>
       <span>aa</span>
-    </div>
+    </>
   );
 }

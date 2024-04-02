@@ -1,13 +1,18 @@
-import { styles } from './page.css';
+import { Counter } from './Counter';
 
-import { Title } from '@/components';
+import { Partition, Text, Title } from '@/components/Elements';
 
 export default function useState() {
   return (
-    <div>
+    <>
       <Title>useState</Title>
-      <div className={styles.container}></div>
-      <div></div>
-    </div>
+      <Text>
+        useState で定義した状態を 親 → 子 → 孫 → ひ孫 と受け渡していく Props drilling の例です。
+      </Text>
+
+      <Partition />
+
+      <Counter />
+    </>
   );
 }

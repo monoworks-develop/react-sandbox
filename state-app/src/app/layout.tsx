@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google';
 
 import { styles } from './layout.css';
 
-import { Header } from '@/components/UI/Header';
+import { Header } from '@/components/UI';
 
 import 'ress';
 

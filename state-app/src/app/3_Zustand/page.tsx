@@ -1,10 +1,23 @@
-import { Title } from '@/components';
+'use client';
+
+import { RecoilRoot } from 'recoil';
+
+import { Counter } from './Counter';
+
+import { Title, Text, Partition } from '@/components/Elements';
 
 export default function Zustand() {
   return (
-    <div>
+    <>
       <Title>Zustand</Title>
-      <span>aa</span>
-    </div>
+
+      <Text>a</Text>
+
+      <Partition />
+
+      <RecoilRoot>
+        <Counter />
+      </RecoilRoot>
+    </>
   );
 }

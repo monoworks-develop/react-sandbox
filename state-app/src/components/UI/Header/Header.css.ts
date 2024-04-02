@@ -4,7 +4,6 @@ import { vars } from '@/components/Styles';
 
 export const styles = {
   header: style({
-    borderBottom: '1px solid ' + vars.color.white.main,
     height: '3rem',
     display: 'flex',
     flexDirection: 'column',

@@ -18,5 +18,12 @@ export const [themeClass, vars] = createTheme({
     green: {
       main: '#00ff00',
     },
+    purple: {
+      main: '#9499ff',
+      light: '#bcc0ff', // 明るい紫
+    },
+    magenta: {
+      main: '#db2777',
+    },
   },
 });
